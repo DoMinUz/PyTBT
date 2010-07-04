@@ -39,5 +39,3 @@ while 1:
 	client2.close()
 	
 	break
-
-
