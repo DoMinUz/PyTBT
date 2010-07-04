@@ -2,7 +2,7 @@
 
 from include.client import client
 
-server = 'huftty.hackers-uf.org'
+server = '127.0.0.1'
 
 choise = int(raw_input('1 -> Send a file\n2 -> Recv a file\n> '))
 
