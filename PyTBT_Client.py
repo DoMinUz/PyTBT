@@ -2,7 +2,7 @@
 
 from include.client import client
 
-server = '127.0.0.1'
+server = 'huftty.hackers-uf.org'
 
 choise = int(raw_input('1 -> Send a file\n2 -> Recv a file\n> '))
 
@@ -38,7 +38,8 @@ elif choise == 2:
 		print file_size
 		print file_lines
 		
+		print 'Waiting...'
 		conn.recv_file(file_name, file_size, file_lines)
-
+		print 'Finished!'
 else:
 	print 'Error!\n'

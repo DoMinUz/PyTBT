@@ -68,18 +68,9 @@ class client:
 	def recv_file(self, file_name, byte, file_lines):
 		self.recv_file = open(file_name, 'wb')
 		byte, file_lines = int(byte), int(file_lines)
-		i = 0
 
 		while 1:
 			data = self.sock.recv(byte)
-			i += 1.
-			percents = str(int(i/file_lines * 100))
-			print percents + '%'
-			
-#			if os.name == 'posix':
-#				os.system('clear')
-#			elif os.name == 'nt':
-#				os.system('cls')
 			if data:
 				self.recv_file.write(data)
 			else:
