@@ -41,7 +41,7 @@ class client:
 
 
 	def send_file_lines(self, dir):
-		file_lines = len(open(dir, 'r').readlines())
+		file_lines = len(open(dir, 'rb').readlines())
 		self.sock.send(str(len(str(file_lines))))
 		self.sock.send(str(file_lines))
 
@@ -52,7 +52,7 @@ class client:
 
 
 	def send_file(self, dir):
-		split_file = open(dir, 'r').readlines()
+		split_file = open(dir, 'rb').readlines()
 		file_lines, i = len(split_file), 0
 		for line in split_file:
 			self.sock.send(line)
@@ -66,7 +66,7 @@ class client:
 
 
 	def recv_file(self, file_name, byte, file_lines):
-		self.recv_file = open(file_name, 'w')
+		self.recv_file = open(file_name, 'wb')
 		byte, file_lines = int(byte), int(file_lines)
 		i = 0
 
