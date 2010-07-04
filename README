@@ -1,15 +1,12 @@
 PyTBT v0.5 (Two Balls Transfer), è un semplice strumento che permette il
 trasferimento di file fra due client.
 L'idea di PyTBT mi è venuta grazie ad un'amica. Mi doveva passare 
-un'immagine
-da msn, ma come tutti sappiamo, il tempo che c'impiega msn, nessun altro
+un'immagine da msn, ma come tutti sappiamo, il tempo che c'impiega msn, 
+nessun altro
 software peer to peer; ecco così che nasce PyTBT!
 La sua funzione è abbastanza semplice. I clients si connettono al 
-server,
-il quale trasferisce i dati ricevuti dal primo client, al secondo 
-client.
+server, il quale trasferisce i dati ricevuti dal primo client, al 
+secondo client.
 Questa prima versione è piuttosto rudimentale, ma dato lo scopo del 
-progetto,
-in seguito aggiungerò una semplice GUI, per accontentare anche e 
-sopratutto
-gli utenti di Windows.
+progetto, in seguito aggiungerò una semplice GUI, per accontentare anche 
+e sopratutto gli utenti di Windows.
